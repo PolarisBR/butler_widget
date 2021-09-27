@@ -1,0 +1,28 @@
+{
+  "name": "butler_widget",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=development",
+    "production": "webpack --mode=production"
+  },
+  "keywords": [],
+  "author": "Bruno Ripa <bruno.ripa@polaris-br.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.2",
+    "html-webpack-plugin-crossorigin": "^1.0.8",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.54.0",
+    "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
