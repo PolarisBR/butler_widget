@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./app";
+import ButlerWidget from "./widget";
 
 (() => {
     window.onload = () => {
@@ -11,7 +11,7 @@ import App from "./app";
         console.log(body);
         body.append(app_dom_element);
         console.log("After");
-        ReactDOM.render(<App />, document.getElementById("hook"));
+        ReactDOM.render(<ButlerWidget config={window.config} />, document.getElementById("hook"));
     };
 
 })()
