@@ -23,4 +23,5 @@ jobs:
         with:
           path: ./public/butler.js
           destination: kimchee-public/
+          credentials: '${{ secrets.SA_KEY }}'
 
