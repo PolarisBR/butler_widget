@@ -17,8 +17,7 @@ jobs:
       - uses: cachix/install-nix-action@v13
       - run: | 
           npm i && npm run production
-      - id: sdk-upload
-        uses: google-github-actions/upload-cloud-storage@main
+      - uses: google-github-actions/upload-cloud-storage@main
         with:
           path: ./public/butler.js
           destination: kimchee-public/
