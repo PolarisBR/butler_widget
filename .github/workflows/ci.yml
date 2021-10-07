@@ -10,4 +10,4 @@ jobs:
           node-version: '14'
       - uses: cachix/install-nix-action@v13
       - run: | 
-          nix-shell && npm i && npm run production
+          npm i && npm run production
