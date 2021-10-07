@@ -11,7 +11,6 @@ jobs:
           project_id: '${{ secrets.PROJECT_ID }}'
           service_account_key: '${{ secrets.SA_KEY }}'
           export_default_credentials: true
-
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
@@ -23,5 +22,4 @@ jobs:
         with:
           path: ./public/butler.js
           destination: kimchee-public/
-          service_account_key: '${{ secrets.SA_KEY }}'
 
