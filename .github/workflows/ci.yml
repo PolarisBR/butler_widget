@@ -12,4 +12,4 @@ jobs:
         with:
           nix_path: nixpkgs=channel:nixos-stable
       - run: | 
-          | nix-shell && npm i && npm run production
+          nix-shell && npm i && npm run production
