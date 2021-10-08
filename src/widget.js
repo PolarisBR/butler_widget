@@ -2,7 +2,7 @@ import React from "react";
 const { ask } = require("./lib");
 
 const ButlerWidget = ({ config }) => {
-    console.log("Widget instantiated");
+    console.log(`Widget instantiated: ${JSON.stringify(config)}`);
     const [question, setQuestion] = React.useState("");
     const [history, setHistory] = React.useState([]);
 
