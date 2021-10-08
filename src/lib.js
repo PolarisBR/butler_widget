@@ -1,4 +1,4 @@
-const { env } = require('process');
+const { env } = process.env;
 const SAY_URL = env.BASE_URL + "/say";
 
 const ask = (question, custmerId) => {
