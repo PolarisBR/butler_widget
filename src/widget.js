@@ -1,7 +1,8 @@
 import React from "react";
 const { ask } = require("./lib");
 
-const ButlerWidget = ({ config: { title, userId } }) => {
+const ButlerWidget = ({ config }) => {
+    console.log(config);
     const [question, setQuestion] = React.useState("");
     const [history, setHistory] = React.useState([]);
 
