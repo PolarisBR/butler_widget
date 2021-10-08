@@ -1,4 +1,5 @@
-const SAY_URL = process.env.BASE_URL + "/say";
+const { env } = require('process');
+const SAY_URL = env.BASE_URL + "/say";
 
 const ask = (question, custmerId) => {
     return new Promise(async (resolve, reject) => {
