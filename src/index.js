@@ -11,7 +11,7 @@ import ButlerWidget from "./widget";
         console.log(body);
         body.append(app_dom_element);
         console.log("After");
-        ReactDOM.render(<ButlerWidget config={window.config} />, document.getElementById("hook"));
+        ReactDOM.render(<ButlerWidget config={{ title: "Title", userId: "1" }} />, document.getElementById("hook"));
     };
 
 })()
