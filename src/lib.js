@@ -1,5 +1,4 @@
-const { env } = process.env;
-const SAY_URL = env.BASE_URL + "/say";
+const SAY_URL = "https://api-gw-60qd84u6.nw.gateway.dev" + "/say";
 
 const ask = (question, custmerId) => {
     return new Promise(async (resolve, reject) => {
