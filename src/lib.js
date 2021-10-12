@@ -1,6 +1,7 @@
 const SAY_URL = "https://api-gw-60qd84u6.nw.gateway.dev" + "/say";
 
 const ask = (question, customerId) => {
+    console.log(`Asking: ${question} with customer id: ${customerId}`);
     return new Promise(async (resolve, reject) => {
         fetch(SAY_URL, {
             method: 'POST', body: JSON.stringify({ question: question }),
@@ -9,7 +10,7 @@ const ask = (question, customerId) => {
                 'User-agent': 'Butler v0.1',
                 'Accept': '*/*',
                 'Content-Type': 'application/json',
-                'X-CustomerID': customerId
+                'X-Customer-ID': customerId
             }
         })
             .then(res => {
