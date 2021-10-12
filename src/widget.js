@@ -17,7 +17,7 @@ const ButlerWidget = ({ config }) => {
 
     return (<div>
         <div>Title {config.title}</div>
-        <div>User ID: {config.userId}</div>
+        <div>Customer ID: {config.customerId}</div>
         <pre>{history && history.map((e, index) => {
             return <div key={index}>{e}</div>
         })}</pre>
