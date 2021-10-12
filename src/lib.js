@@ -9,7 +9,7 @@ const ask = (question, customerId) => {
                 'User-agent': 'Butler v0.1',
                 'Accept': '*/*',
                 'Content-Type': 'application/json',
-                'X-Customer-ID': customerId
+                'X-CustomerID': customerId
             }
         })
             .then(res => {
