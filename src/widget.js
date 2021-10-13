@@ -7,7 +7,7 @@ const ButlerWidget = ({ config }) => {
     const [history, setHistory] = React.useState([]);
 
     const updateHistory = () => {
-        ask(question).then(response => {
+        ask(question, config.customerId).then(response => {
             setHistory(history.concat(question));
             setQuestion("");
         }).catch(error => {
