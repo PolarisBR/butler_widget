@@ -14,6 +14,7 @@ const ask = (question, customerId) => {
             }
         })
             .then(res => {
+                console.log(`Res: ${JSON.stringify(res)}`);
                 if (res.ok) {
                     let response = res.text();
                     console.log(`In the component: ${JSON.stringify(response)}`);
